@@ -8,7 +8,6 @@ import re
 
 url = "https://theyfightcrime.org/"
 html = urlopen(url)
-   
 
 text_html = requests.get('https://theyfightcrime.org/')   #Make request
 
@@ -22,11 +21,9 @@ soup = BeautifulSoup(text_html.text, 'lxml')
 
 for script in soup(["script", "style"]):
     script.extract() 
-
+      
 text = soup.get_text()
 print(text)  #Prints only text on website
-type(text)
-
 
 #We want to generate two files.
 #Save the male characters in one text file and save the female characters in another text file.
