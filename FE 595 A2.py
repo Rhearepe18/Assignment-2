@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup   #The Beautiful Soup package is used to extract data from html files. 
 from urllib.request import urlopen  #The urllib.request module is used to open URLs. 
 import re 
-
+from requests import get
 #After importing necessary modules, 
 #specify the URL containing the dataset and pass it to urlopen() to get the html of the page.
 
